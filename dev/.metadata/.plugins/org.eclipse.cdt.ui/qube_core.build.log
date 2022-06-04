@@ -1,0 +1,10 @@
+23:57:59 **** Incremental Build of configuration Debug for project qube_core ****
+make -j12 all 
+arm-none-eabi-size   qube_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18348	     20	   1940	  20308	   4f54	qube_core.elf
+Finished building: default.size.stdout
+ 
+
+23:57:59 Build Finished. 0 errors, 0 warnings. (took 428ms)
+

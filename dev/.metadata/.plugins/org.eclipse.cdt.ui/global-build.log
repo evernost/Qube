@@ -1,0 +1,35 @@
+23:55:06 **** Incremental Build of configuration Debug for project qube_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32G431xx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'LEDs_init':
+../Core/Src/main.c:476:21: warning: variable 'I2C_stat' set but not used [-Wunused-but-set-variable]
+   HAL_StatusTypeDef I2C_stat;
+                     ^~~~~~~~
+arm-none-eabi-gcc -o "qube_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\recherche\projets\projet_qube\dev\qube_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="qube_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: qube_core.elf
+ 
+arm-none-eabi-objdump -h -S  qube_core.elf  > "qube_core.list"
+arm-none-eabi-objcopy  -O binary  qube_core.elf  "qube_core.bin"
+arm-none-eabi-size   qube_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18348	     20	   1940	  20308	   4f54	qube_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: qube_core.bin
+ 
+Finished building: qube_core.list
+ 
+23:55:10 **** Incremental Build of configuration Debug for project qube_core ****
+make -j12 all 
+arm-none-eabi-size   qube_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18348	     20	   1940	  20308	   4f54	qube_core.elf
+Finished building: default.size.stdout
+ 
+23:57:59 **** Incremental Build of configuration Debug for project qube_core ****
+make -j12 all 
+arm-none-eabi-size   qube_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18348	     20	   1940	  20308	   4f54	qube_core.elf
+Finished building: default.size.stdout
+ 

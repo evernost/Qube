@@ -1,0 +1,8 @@
+<b>Qube project</b><br>
+Electronic version of the Rubik's cube, using RGB LEDs spread on a single PCB replicated 6 times (one for each face)<br>
+Main components:
+<ul style="list-style-type: disc;">
+<li>CPU = STM32G431KB,</li>
+<li>RGB LED driver = LP5030</li>
+</ul>
+Project started: 24/02/2020
