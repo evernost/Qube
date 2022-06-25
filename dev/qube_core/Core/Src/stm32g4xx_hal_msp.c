@@ -20,7 +20,9 @@
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+#include "cpu.h"
+#include "stm32g4xx_hal.h"
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
