@@ -36,16 +36,16 @@ static void MX_TIM2_Init(void);
 static void SystemClock_Config(void);
 
 // Interrupts
-volatile uint8_t timer_IT = 0U;
+volatile uint8_t timer2_expired = 0U;
 
 // ============================================================================
 // Main code
 // ============================================================================
 
 // ----------------------------------------------------------------------------
-// cpu_init() function
+// cpuInit() function
 // ----------------------------------------------------------------------------
-void cpu_init(void)
+void cpuInit(void)
 {
   // Reset of all peripherals, Initializes the Flash interface and the Systick.
   HAL_Init();
@@ -253,7 +253,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   if (htim == &htim2)
   {
-    timer_IT = 1;
+    timer2_expired = 1;
   }
 }
 
@@ -352,9 +352,9 @@ static void MX_GPIO_Init(void)
 
 
 // ----------------------------------------------------------------------------
-// get_board_ID() function
+// getBoardID() function
 // ----------------------------------------------------------------------------
-uint8_t get_board_ID(void)
+uint8_t getBoardID(void)
 {
   uint8_t ret = 0U;
   ret |= HAL_GPIO_ReadPin(BOARD_ID_0_GPIO_Port, BOARD_ID_0_Pin);

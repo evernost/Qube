@@ -18,21 +18,19 @@ extern "C" {
 #include "led.h"
 
 // LED colors are defined in led.c
-extern const RGB_LED LED_RED;
-extern const RGB_LED LED_GREEN;
-extern const RGB_LED LED_BLUE;
-extern const RGB_LED LED_YELLOW;
-extern const RGB_LED LED_ORANGE;
-extern const RGB_LED LED_WHITE;
-extern const RGB_LED LED_VIOLET;
-extern const RGB_LED LED_PINK;
+extern const rgbLedType RED_LED;
+extern const rgbLedType GREEN_LED;
+extern const rgbLedType BLUE_LED;
+extern const rgbLedType YELLOW_LED;
+extern const rgbLedType ORANGE_LED;
+extern const rgbLedType WHITE_LED;
+extern const rgbLedType VIOLET_LED;
+extern const rgbLedType PINK_LED;
 
 // Defined in cpu.c
-extern volatile uint8_t timer_IT;
+extern volatile uint8_t timer2_expired;
 
 // Exported functions prototypes ----------------------------------------------
-
-
 
 
 // Private defines ------------------------------------------------------------

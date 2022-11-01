@@ -55,8 +55,8 @@ extern "C" {
 // Types ----------------------------------------------------------------------
 
 // Functions prototypes -------------------------------------------------------
-void cpu_init(void);
-uint8_t get_board_ID(void);
+void cpuInit(void);
+uint8_t getBoardID(void);
 void Error_Handler(void);
 
 #ifdef __cplusplus

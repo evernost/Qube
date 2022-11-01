@@ -111,8 +111,8 @@ extern "C" {
 // extern const midi_note_event MIDI_NOTE_EVENT_EMPTY;
 
 // Functions prototypes -------------------------------------------------------
-void paint(RGB_LED*, RGB_LED);
-void move(RGB_LED (*)[9], uint8_t, uint8_t);
+void move(rgbLedType (*)[9], uint8_t, uint8_t);
+void paintFace(rgbLedType*, rgbLedType);
 
 #ifdef __cplusplus
 }

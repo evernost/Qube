@@ -1,2 +1,2 @@
-../Core/Src/led.c:35:6:LEDs_init	40	static
-../Core/Src/led.c:113:6:LEDs_update	64	static
+../Core/Src/led.c:48:6:ledInitDriver	48	dynamic
+../Core/Src/led.c:136:6:ledUpdateFace	88	dynamic

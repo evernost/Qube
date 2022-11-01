@@ -119,19 +119,20 @@ extern I2C_HandleTypeDef hi2c1; // defined in cpu.c
 
 
 // Types ----------------------------------------------------------------------
-typedef struct RGB_LED
+typedef struct rgbLedType
 {
-  uint8_t R;
-  uint8_t G;
-  uint8_t B;
-} RGB_LED;
+  uint8_t r;
+  uint8_t g;
+  uint8_t b;
+} rgbLedType;
 
 
 // Functions prototypes -------------------------------------------------------
 
 // Public
-void LEDs_init(void);
-void LEDs_update(RGB_LED (*)[9], uint8_t);
+void ledInitDriver(void);
+void ledUpdateFace(rgbLedType (*)[9], uint8_t);
+void ledUpdate(rgbLedType (*)[9]);
 
 
 // Private

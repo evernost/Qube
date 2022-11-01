@@ -1,4 +1,4 @@
 ../Core/Src/cube.c:28:6:move	24	static
 ../Core/Src/cube.c:131:13:swap	24	static
-../Core/Src/cube.c:153:13:circ_perm	16	static
-../Core/Src/cube.c:186:6:paint	24	static
+../Core/Src/cube.c:153:13:circPerm	16	static
+../Core/Src/cube.c:195:6:paintFace	24	static
