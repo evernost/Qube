@@ -1,6 +1,9 @@
 # Qube
 LED Rubik's Cube.
 
+![image](https://github.com/evernost/Qube/assets/106398901/3c8b8600-cd64-4ada-bfa4-2559e8c29ab0)
+
+
 Parts list
 -
 | Part        | Ref          | Order code       |
